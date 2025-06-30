@@ -3,112 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hôtel Prestige Mouscron</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-
-    header {
-      background-color: #2c3e50;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #34495e;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .services-list {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-
-    .gallery img {
-      width: 220px;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    .reservation-form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 400px;
-      margin: auto;
-    }
-
-    .reservation-form input,
-    .reservation-form button {
-      padding: 10px;
-      font-size: 16px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    .reservation-form button {
-      background-color: #2c3e50;
-      color: white;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .reservation-form button:hover {
-      background-color: #1a242f;
-    }
-
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
-  </style>
+  <title>Hôtel Prestige - Mouscron</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header>
     <h1>Hôtel Prestige Mouscron</h1>
+    <nav>
+      <ul>
+        <li><a href="#a-propos">A propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#reservation">Réservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#galerie">Galerie</a>
-    <a href="#reservation">Réservation</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section>
+  <section id="a-propos">
+    <h2>À propos</h2>
     <p>
       Bienvenue à l'Hôtel Prestige situé au cœur de Mouscron. Offrant un mélange de luxe contemporain et de confort traditionnel, notre établissement vous garantit un séjour inoubliable, que vous soyez en voyage d'affaires ou en vacances.
     </p>
@@ -129,9 +42,9 @@
     <h2>Galerie</h2>
     <div class="gallery">
       <img src="images/marck.1.jpg" alt="Hall de l'hôtel" />
-      <img src="images/marck2.jpg" alt="Salon de l'hôtel" />
-      <img src="images/marck.3.jpg" alt="Réception luxueuse" />
-      <img src="images/marck.4.jpg" alt="Chambre moderne" />
+      <img src="images/marck.3.jpg" alt="Salon de l'hôtel" />
+      <img src="images/marck.4.jpg" alt="Réception luxueuse" />
+      <img src="images/marck2.jpg" alt="Chambre moderne" />
     </div>
   </section>
 
@@ -160,6 +73,7 @@
     <p>Tél : +32 56 12 34 56</p>
     <p>Email : contact@hotelprestige-mouscron.be</p>
 
+    <!-- Carte Google Maps intégrée -->
     <div style="width: 100%; height: 400px; margin-top: 20px;">
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.9052744417967!2d3.2227086158001943!3d50.7374116795177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2a987d021bfbf%3A0x40f9d96e0c16b10!2sMouscron!5e0!3m2!1sfr!2sbe!4v1719419623014!5m2!1sfr!2sbe" 
