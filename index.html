@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hôtel Prestige - Mouscron</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hôtel Prestige Mouscron</h1>
+    <nav>
+      <ul>
+        <li><a href="#a-propos">A propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#reservation">Réservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="a-propos">
+    <h2>À propos</h2>
+    <p>
+      Bienvenue à l'Hôtel Prestige situé au cœur de Mouscron. Offrant un mélange de luxe contemporain et de confort traditionnel, notre établissement vous garantit un séjour inoubliable, que vous soyez en voyage d'affaires ou en vacances.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Nos Services</h2>
+    <ul class="services-list">
+      <li>Chambres de luxe avec vue panoramique</li>
+      <li>Petit-déjeuner continental</li>
+      <li>Spa et centre de bien-être</li>
+      <li>Wi-Fi haut débit gratuit</li>
+      <li>Service en chambre 24h/24</li>
+    </ul>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="images/marck.1.jpg" alt="Hall de l'hôtel" />
+      <img src="images/marck2.jpg" alt="Salon de l'hôtel" />
+      <img src="images/marck.3.jpg" alt="Réception luxueuse" />
+      <img src="images/marck.4.jpg" alt="Chambre moderne" />
+    </div>
+  </section>
+
+  <section id="reservation">
+    <h2>Réservation</h2>
+    <form onsubmit="event.preventDefault(); alert('Merci pour votre réservation !');" class="reservation-form">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="date">Date d'arrivée :</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="nuits">Nombre de nuits :</label>
+      <input type="number" id="nuits" name="nuits" min="1" required />
+
+      <button type="submit">Réserver</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Adresse : Rue de la Station 12, 7700 Mouscron, Belgique</p>
+    <p>Tél : +32 56 12 34 56</p>
+    <p>Email : contact@hotelprestige-mouscron.be</p>
+
+    <!-- Carte Google Maps intégrée -->
+    <div style="width: 100%; height: 400px; margin-top: 20px;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.9052744417967!2d3.2227086158001943!3d50.7374116795177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2a987d021bfbf%3A0x40f9d96e0c16b10!2sMouscron!5e0!3m2!1sfr!2sbe!4v1719419623014!5m2!1sfr!2sbe" 
+        width="100%" 
+        height="100%" 
+        style="border:0; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hôtel Prestige Mouscron. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
